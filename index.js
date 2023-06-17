@@ -3,6 +3,8 @@ const app = express()
 app.use(express.json())
 const morgan = require('morgan')
 app.use(morgan('tiny'))
+const cors = require('cors')
+app.use(cors())
 
 let persons = [
     { 
